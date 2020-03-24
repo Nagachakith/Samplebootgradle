@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class HelloController {
 
     private static long start = System.currentTimeMillis();
-
+    @GetMapping("/")
     public String sayHello() {
 
         return String.format("Hello, Spring boot with Gradle Build");
