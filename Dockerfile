@@ -19,6 +19,6 @@ FROM java:jre-alpine
 
 WORKDIR /home/gradle/project
 
-COPY --from=0 /home/gradle/bootgradle/build/libs/bootgradle-0.0.2-SNAPSHOT.jar .
+COPY --from=0 /home/gradle/bootgradle/build/libs/bootgradle-*-SNAPSHOT.jar .
 
-ENTRYPOINT java -jar bootgradle-0.0.2-SNAPSHOT.jar
+ENTRYPOINT java -jar bootgradle-*-SNAPSHOT.jar
