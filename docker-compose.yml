@@ -1,7 +1,7 @@
 version: '3'
 services:
-  spring_boot_realworld_example_app:
-    image: allthethings/spring-boot-realworld-example-app
+  spring_boot:
+    image: 
     ports: 
       - "8080:8080"
     depends_on: 
